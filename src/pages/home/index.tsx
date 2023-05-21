@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/Portfolio-Jorge-Rodrigo-V1`;
 
   return (
     <main id="home">
@@ -44,10 +44,16 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">
+                Hello, my name is{"  "}
+                <Text as="span" type="heading4" color="brand1">
+                  {" "}
+                  {userData.nameUser}
+                </Text>
+              </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
@@ -58,8 +64,9 @@ export const Home = (): JSX.Element => {
               projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              I'm a Full Stack Developer who is passionate about technology and
+              who loves challenges and learning new things. I know that this is
+              just the beginning and that I will evolve even more.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -95,10 +102,7 @@ export const Home = (): JSX.Element => {
                 My projects
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+                Some of my projects that are located on github
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
